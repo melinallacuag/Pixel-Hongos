@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background: #fff;
+    }
+
+    .pixelart {
+        width: 2px;
+        height: 2px;
+        transform: scale(2);
+        background: transparent;
+        position: relative;
+        -webkit-animation: myfirst 5s infinite ; /* Chrome, Safari, Opera */
+    -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+    animation: myfirst 5s infinite;
+    animation-direction: alternate;
+        animation: blocker .65s step-start infinite;
+        box-shadow: 12px 2px #000, 14px 2px #000, 16px 2px #000, 18px 2px #000, 20px 2px #000, 22px 2px #000,
+            8px 4px #000, 10px 4px #000,6px 6px #000,4px 8px #000,4px 10px #000,2px 12px #000,2px 14px #000,
+            2px 16px #000,2px 18px #000,2px 20px #000,2px 22px #000,24px 4px #000,26px 4px #000,
+            28px 6px #000,30px 8px #000,30px 10px #000,32px 12px #000,
+            32px 14px #000, 32px 16px #000, 32px 18px #000, 32px 20px #000, 32px 22px #000,
+            30px 24px #000, 28px 24px #000, 26px 24px #000, 24px 22px #000, 22px 22px #000,
+            20px 22px #000, 18px 22px #000, 16px 22px #000, 14px 22px #000, 12px 22px #000,
+            10px 22px #000, 8px 24px #000, 6px 24px #000, 4px 24px #000,
+            6px 26px #000, 6px 28px #000, 8px 30px #000, 10px 32px #000, 12px 32px #000,
+            14px 32px #000, 16px 32px #000, 18px 32px #000, 20px 32px #000, 22px 32px #000,
+            24px 32px #000, 26px 30px #000, 28px 28px #000, 28px 26px #000,
+            20px 26px #000, 20px 24px #000, 14px 24px #000, 14px 26px #000,
+            16px 4px #C30F00, 18px 4px #C30F00, 20px 4px #C30F00, 22px 4px #C30F00,
+            16px 6px #E11605, 18px 6px #E11605, 20px 6px #E11605, 22px 6px #E11605,
+            14px 8px #FF1703, 16px 8px #FF1703, 18px 8px #FF1703, 20px 8px #FF1703, 22px 8px #FF1703, 24px 8px #E11605,
+            12px 10px #FF1703, 14px 10px #FF1703, 12px 12px #FF1703, 10px 12px #FF1703, 8px 12px #FF1703, 6px 12px #E11605,
+            4px 12px #C30F00, 4px 14px #C30F00, 10px 14px #FF1703, 12px 14px #FF1703, 12px 16px #FF1703,
+            12px 18px #E11605, 14px 18px #E11605, 14px 20px #C30F00, 12px 20px #C30F00, 10px 20px #C30F00,
+            8px 22px #C30F00, 6px 22px #C30F00, 4px 22px #C30F00, 4px 20px #C30F00,
+            16px 20px #C30F00, 18px 20px #C30F00, 20px 20px #C30F00, 22px 20px #C30F00, 24px 20px #C30F00,
+            26px 20px #C30F00, 26px 22px #C30F00, 28px 22px #C30F00, 24px 18px #E11605, 26px 18px #E11605,
+            26px 16px #FF1703, 26px 14px #FF1703, 26px 12px #FF1703, 24px 10px #FF1703, 26px 10px #E11605,
+            28px 12px #E11605, 28px 14px #E11605, 28px 16px #E11605, 30px 12px #C30F00, 30px 14px #C30F00;
+    }
+    div {
+    width: 0px;
+    height: 0px;
+    background: red;
+    position: relative;
+    -webkit-animation: myfirst 5s linear infinite; /* Chrome, Safari, Opera */
+    /* -webkit-animation-direction: alternate; */
+    /* animation: myfirst 5s infinite; */
+    /* animation-direction: alternate; */
+}
+    @-webkit-keyframes myfirst {
+    0%   {background: red; left: 0px; top: 0px;}
+    /* 50%  {background: blue; left: 200px; top: 0px;} */
+    /* 25%  {background: yellow; left: 200px; top: 0px;}
+   
+    75%  {background: green; left: 0px; top: 200px;} */
+    100% {background: red; left: 300px; top: 0px;}
+}
+
+/* @keyframes myfirst {
+    0%   {background: red; left: 0px; top: 0px;}
+    25%  {background: yellow; left: 200px; top: 0px;}
+    50%  {background: blue; left: 200px; top: 200px;}
+    75%  {background: green; left: 0px; top: 200px;}
+    100% {background: red; left: 0px; top: 0px;}
+} */
+
+    @keyframes blocker {
+  50%  { box-shadow:  12px 2px #000, 14px 2px #000, 16px 2px #000, 18px 2px #000, 20px 2px #000, 22px 2px #000,
+            8px 4px #000, 10px 4px #000,6px 6px #000,4px 8px #000,4px 10px #000,2px 12px #000,2px 14px #000,
+            2px 16px #000,2px 18px #000,2px 20px #000,2px 22px #000,24px 4px #000,26px 4px #000,
+            28px 6px #000,30px 8px #000,30px 10px #000,32px 12px #000,
+            32px 14px #000, 32px 16px #000, 32px 18px #000, 32px 20px #000, 32px 22px #000,
+            30px 24px #000, 28px 24px #000, 26px 24px #000, 24px 22px #000, 22px 22px #000,
+            20px 22px #000, 18px 22px #000, 16px 22px #000, 14px 22px #000, 12px 22px #000,
+            10px 22px #000, 8px 24px #000, 6px 24px #000, 4px 24px #000,
+            6px 26px #000, 6px 28px #000, 8px 30px #000, 10px 32px #000, 12px 32px #000,
+            14px 32px #000, 16px 32px #000, 18px 32px #000, 20px 32px #000, 22px 32px #000,
+            24px 32px #000, 26px 30px #000, 28px 28px #000, 28px 26px #000,
+            20px 26px #000, 20px 24px #000, 14px 24px #000, 14px 26px #000,
+            26px 15px #123456;
+        }
+}
+
+</style>
+
+<body>
+    <div >
+        <div class="pixelart"></div>
+    </div>
+    <!-- <div></div> -->
+</body>
+
+</html>
